@@ -28,3 +28,8 @@ php artisan jetstream:install livewire --api --dark --verification --teams
 - Tanpa --verification → User bisa langsung login tanpa perlu verifikasi email.
 - Tanpa --teams → Fitur tim tidak tersedia, hanya user individual.
 - Jadi, perintah ini sangat cocok buat aplikasi berbasis tim dengan API dan dark mode. 🚀
+
+5. Lalu agar tailwindcss nya diupgrade ke versi 4x, maka jalankan kode ini:
+```
+npx @tailwindcss/upgrade
+```
