@@ -33,3 +33,24 @@ php artisan jetstream:install livewire --api --dark --verification --teams
 ```
 npx @tailwindcss/upgrade
 ```
+
+6. Kemudian nantinya akan error. sekarang perbarui file ```vite.config.js``` seperti dibawah ini
+
+```js
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: ['resources/css/app.css', 'resources/js/app.js'],
+            refresh: true,
+        }),
+        tailwindcss(),
+    ],
+});
+
+```
+
+
